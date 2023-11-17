@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Pertanian</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>TaniPedia</h1>
+    </header>
+    <div class="container">
+        <h2>Selamat datang</h2>
+        <div class="crop">
+            <h3>Tanipedia</h3>
+            <p>Melayani kebutuhan tanaman anda</p>
+        </div>
+        <h2>Daftar Barang</h2>
+        <title>Daftar Jenis Pestisida</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+            }
+            
+            header {
+                background-color: #34bc3d;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            h1 {
+                color: #333;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            
+            table,
+            th,
+            td {
+                border: 1px solid #ddd;
+            }
+            
+            th,
+            td {
+                padding: 10px;
+                text-align: left;
+            }
+            
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama</th>
+                            <th>Jenis</th>
+                            <th>Penggunaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Brofreya</td>
+                            <td>Insektisida</td>
+                            <td>Membasmi hama serangga</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Brasso</td>
+                            <td>Fungisida</td>
+                            <td>Melawan penyakit jamur</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Roundup</td>
+                            <td>Herbisida</td>
+                            <td>Mengendalikan gulma</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Dursban</td>
+                            <td>Herbisida</td>
+                            <td>Mengendalikan gulma</td>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+
+        <head>
+            <title>Web Pertanian</title>
+            <style>
+                .form-container {
+                    max-width: 600px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+                
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                }
+                
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
+                }
+                
+                select {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
+                }
+                
+                button {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                
+                button:hover {
+                    background-color: #45a049;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="form-container">
+                <h2>Formulir Pesanan Barang</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+
+                    <label for="jenis_barang">Jenis Barang:</label>
+                    <select id="jenis_barang" name="jenis_barang" required>
+                <option value="Insektisida">Insektisida</option>
+                <option value="Fungisida">Fungisida</option>
+                <option value="Herbisida">Herbisida</option>
+            </select>
+
+                    <label for="jumlah">Jumlah:</label>
+                    <input type="number" id="jumlah" name="jumlah" required>
+
+                    <label for="alamat">Alamat Pengiriman:</label>
+                    <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+                    <button type="submit">Pesan</button>
+                </form>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
